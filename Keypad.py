@@ -2,7 +2,7 @@ import serial
 
 class keypad:
 
-	kpad
+	kpad = -1
 	BaudRate = 9600
 	keypadLocation = "/dev/ttyUSB0"
 
@@ -23,4 +23,4 @@ class keypad:
 	def SendLine(data):
 		global kpad
 		
-		kpad.write(data)
+		kpad.write(data)Ini
